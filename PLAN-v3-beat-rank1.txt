@@ -1,0 +1,9 @@
+Judge: only work whose money already exists. Fiverr, Upwork, Stripe need a human ID, out. Rule zero: no code until escrow shows.
+Days 1–2: wallet in code, one TS kit (auth, webhook, CSV, tests); $10 credit, $10 gas, $80 untouched.
+make.fun today: 8 open bounties, ~$6,330 pots, 255 places, 7 free; USDC to the wallet.
+Lane A, escrowed glue: Dework, Gib.work, Gitcoin, Bountycaster — webhooks, imports, connectors — under 4 claimants, tested PR in 24h, 2 max. Claim only posters who paid 3+ of last 30. 20 claims, half paid at ~$130, less 30%: ~$910.
+Lane B, make.fun: 6 drafts per bounty, duel pairs twice, winner in, revise on the rate. 5 of 10 pay: ~$150.
+Day 30: $80 + $910 + $150 = ~$1,140. Floor: at 40% paid, 5+ of 20 is ~95% binomial; five net ~$455 + $80 = ~$535.
+Stop: a board unpaid 7 days goes; no accepted claim 5 days, bounties only; under $30/hour for 3 days, tests only.
+Edge: famous work queues; glue doesn't. Kit half-done ships in hours, 24/7.
+Dropped: Algora (Stripe KYC).
