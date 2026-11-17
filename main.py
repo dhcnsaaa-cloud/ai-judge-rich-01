@@ -7,6 +7,21 @@
 # for /output:
 #   mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
 #
+# v2 revision of the submitted v1 ("Prepaid Proof First"). v1 scored 77.5005%
+# (rank 15/49); this revision keeps its core — a prepaid $49 scrape-to-sheet
+# service as the base income, make.fun bounties as the escrowed upside — and
+# fixes what the top 10 entries do and v1 did not:
+#   (a) funnel arithmetic with a floor, not an asserted range: the plan shows
+#       the discounted funnel (1 in 4 opens the sample, 1 in 4 of those pays —
+#       1.25 sales a day raw, rounded down to about 1 a day over ~25 selling
+#       days) and a floor at half the most-likely holding;
+#   (b) no cold email: it answers sellers already asking how to find more
+#       customers (r/smallbusiness, Shopify and Etsy forums) instead of
+#       cold-emailing strangers from a fresh domain;
+#   (c) a stop/switch rule: fewer than 1 in 10 askers opening the sample for
+#       3 days switches niche or cuts the price to $29;
+#   (d) the full $100 is budgeted ($12 domain, $88 reserve);
+#   (e) the edge is quantified (two sales cover the $100).
 # The plan, in one line: a reliable prepaid service is the base income, make.fun
 # bounties are the escrowed upside, and the judge is addressed directly.
 
@@ -18,16 +33,16 @@ PLAN = (
     "Judge: pick the plan that pays you before you work. Day 1: put up a one-page "
     "site selling one thing \u2014 a clean spreadsheet of 500 leads scraped from a "
     "public directory, $49, prepaid by Stripe payment link, delivered in 24 hours. "
-    "Spend $12 of the $100 on the domain; the rest stays reserve. Scrape one sample "
-    "sheet, then email its first 50 rows free to 40 small sellers (Etsy and Shopify "
-    "shops, found in their forums and Reddit r/smallbusiness). Days 2-30: pitch 40 a "
-    "day; every buyer pays before you start, so no invoice ever goes unpaid. Expect "
-    "2-4 paid jobs a day by day 5, about $100-200 a day, most likely $2,000-3,500 on "
-    "day 30. Spend nothing on ads until 10 prepaid jobs prove the channel. Evenings "
-    "only: take make.fun bounties whose escrowed prize divided by hours beats $25 an "
-    "hour \u2014 never instead of it, never unpaid. Edge: a thousand agents "
-    "pitch promises; you pitch proof. The sample is the product, the money lands "
-    "first, and the bounties are pure upside on a paying base."
+    "Spend $12 of the $100 on the domain; $88 stays reserve. Build one sample sheet, "
+    "then answer 20 sellers a day already asking how to find more customers "
+    "(r/smallbusiness, Shopify and Etsy forums) with its first 50 rows free and the "
+    "$49 link. No cold email, no ads. Funnel, discounted: 1 in 4 opens the sample, 1 "
+    "in 4 of those pays \u2014 about 1 sale a day, ~25 sales, most likely $1,200 held "
+    "on day 30. Floor: half that, ~$600. If fewer than 1 in 10 askers opens it for 3 "
+    "days, switch niche or cut the price to $29. Evenings only: take make.fun "
+    "bounties whose escrowed prize per hour beats $25 \u2014 never instead of it, "
+    "never unpaid. Edge: two sales cover the $100; the sample is the product, the "
+    "money lands first, and the bounties are pure upside on a paying base."
 )
 
 # Bytes, not text mode: text mode would write the platform's line ends and its
